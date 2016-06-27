@@ -1,49 +1,26 @@
-https://github.com/wiselyman/study/blob/master/mesos/mesos%E5%AE%89%E8%A3%85.md
-https://open.mesosphere.com/getting-started/install/
-
-Master:
-	yum -y groupinstall 'Development Tools'
-	yum -y install http://repos.mesosphere.com/el/7/noarch/RPMS/mesosphere-el-repo-7-3.noarch.rpm
-	yum install -y mesos marathon mesosphere-zookeeper
-
-	echo 1 > /var/lib/zookeeper/myid #a unique integer between 1 and 255 on each node.
-	vi /etc/zookeeper/conf/zoo.cfg
-	server.1=10.1.240.125:2888:3888
-	#server.2=2.2.2.2:2888:3888
-
-	systemctl start zookeeper
-	
-	vi /etc/mesos/zk
-	zk://10.1.240.125:2181/mesos
-	#zk://1.1.1.1:2181,2.2.2.2:2181,3.3.3.3:2181/mesos
-	
-	vi /etc/mesos-master/quorum
-	1
-	#greater than the number of masters divided by 2
-	
-	hostnamectl set-hostname mesos-master2
-	
-	vi /etc/hosts
-	10.1.50.250 mesos-master
-	10.1.240.125 mesos-master2
-	10.1.50.252 mesos-slave
-	
-	systemctl start mesos-master
-	systemctl start mesos-slave
-	systemctl start marathon
-	
-	http://10.1.240.125:5050/
-	http://10.1.240.125:8080/
-	
-Slave:
-	hostnamectl set-hostname mesos-master2
-	vi /etc/mesos/zk
-	zk://10.1.240.125:2181/mesos
-	
-	systemctl disable mesos-master
-	systemctl start mesos-slave
-	
-
-	python -m SimpleHTTPServer $PORT
-	
-
+U2FsdGVkX1+enP2erMNuWyy1bxY5F5L8xmS+P+wlVzxQIoaRRDtkv2dWqyGZ1u7Y
+oFhURKXzutS+C8xPs09T3KttZana/lWTKpx/A6WXTlviBZf8vYUCAS7nkjS0TzeG
+t/n+8tnnay4YIQVQ7FiAWBnQLc4y7E7JuCl/NIzSbVGA/vSqeQR++U9FNkoOruVu
+YC5+nRmGg0vTSB4BjO8HUxZS3cznAleO2YSbfqkfNUnDtMcc+px9V6zTDc1NPpp2
+Cdilvm8uobsuzi+HDwZt297jI78f0tzEvOn0SEMk/XcVDdEHF854qwp5UdK+6Djn
+XV7HwJbHJ/99tGsBzb/dqvvBv73WEeXpw66A6vsf6HBm052QEniiSJnFmQwZD8Mg
+/h1kYjEH2P/4IWSSrnYWYoeLb2ZY28/G9y2moK4swLFU8PYLAlrPXZKpM2Lh5w2x
+FtkGtzXy5gzHdZb6zIK1QR0iQjAG3HiHGcWUeOoQXMEwmuwZuwthzdvNz47FZnsR
+Zff3NG0vC8dmixbo6mv0VDVK+DyhuzYXc/00bg5SQHIMjB9keJfsRixbg2r5iRtp
+5iP4H9fs8lZuMOCLHKu9b6wsoxZwsinipRTlxOIWo2C6zZER839xg/sQsTMCA9YC
+F4XpOq048siPDdhWVBo1rpP9YR9Zcv+Jz59N4zbVYVRhYKlOVhIAsLZTaJi9I16a
+Tb6zThDCFMozENhB4yJFfT/aNwl89k8waqy1EEKMRXUEP+kfJ52GwvUaNqOGh7uB
+xg2eSndFaX0mtC45fZUWWicHSYIh6Opk1YEX6c3Go1POdTHFwvogPhSUmfXA6UQL
+qGBuR+w67cLzkjSJdSwX2NgjKQR7pRHxeAVUdXs9/LsLG8aj7uaml6P9QAyhFpPC
+MCfONCSkio0uq/B/2lLheKQm6Esb+yuA02QBykttVEGBSSUq7HZUQojj+FvjMCHg
+magcwo1FgsvbA0KUuXS7JNFDP3wZDmwRZYUxcqh4VX8fMAjgp14yI3uJ1uAIJqha
+VQ0dbKQGeALIIYGDCTupRM8DZVYoJsA12CcbvYbaeBObmOX+qTzy6HSCOwx9PlyO
+J8pA+Th8humEJNbSkmvvUeNfA+W5s1EFDscxki5n1eLbz6WSGv1M0Hq/2D9BmNh6
+SkR1iMzTc8iEaKxso7+ZRBUALrpKu09clfW3rNVy5QGP92Jid+lcrsTiInFx8c1d
+qoOLjndcA4UM/M5XqlpGv0tgxFn0ilLrKtWim0a2ns3EEYTaM4OUhQUu+R0cj1E/
+QutIl59oiRYtGpDNbIsv/ehWgelakuBHJqkaez+B5Mro0bIsxOPPNnINBXpls80M
+CtpCr+e0JYvtPLa0/gNA5ieZcWdbwEu3oyvt+ANXRtJpflmA6n13D/+Q8Y+AL0SE
+91e1rLesCJou6SKBcHYXXrsRLZdzumrogNtYIHLnQn41dmAINcapzI/xHcoCimky
+vOkXhBjpqnbaVUAXJagOkyoh4ow0JmVk+aCTwEsED7m339BxTs5qHHNfiRAXbie8
+FMuk46YlkRHrSiD8RhQOqkbf7zdEWr7PKAQiP9NWFx2Kh3lgAfUXJ2NhlQE+WsIV
+J4PhPsfn6/2HawdPblAijkTjiMncCiw9
